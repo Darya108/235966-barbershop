@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп: Каталог</title>
+  </head>
+  <body>
+      <div class="main-header">
+          <div class="container">
+              <div class="page-logo">
+                  <img src="http://placehold.it/150x100" alt="Barbershop"> 
+              </div>
+              <nav class="main-navigation">
+              <ul>
+                  <li><a href="#">Информация</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Прайс-лист</a></li>
+                  <li><a href="#">Магазин</a></li>
+                  <li><a href="#">Контакты</a></li>
+              </ul>
+              </nav>
+          </div>
+      </div>
+      <main class="container">
+          <h1>Средства для ухода</h1>
+          <nav class="second-nav">
+              <ul>
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="catalog.html">Магазин</a></li>
+                  <li><a href="#">Средства для ухода</a></li>
+              </ul>
+          </nav>
+          <div class="catalog-content">
+              <div class="catalog-content-left">
+                  <section class="producers">
+                      <h2>Производители:</h2>
+                      <form class="select-producer" action="/echo" method="post">
+                          <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
+                          <label for="baxter-of-california">Baxter of California</label>
+                          <input type="checkbox" name="mr-natty" id="mr-natty">
+                          <label for="mr-natty">Mr Natty</label>
+                          <input type="checkbox" name="suavetico" id="suavetico" checked>
+                          <label for="suavetico">Suavetico</label>
+                          <input type="checkbox" name="malin-goetz" id="malin-goetz">
+                          <label for="malin-goetz">Malin+Goetz</label>
+                          <input type="checkbox" name="murrays" id="murrays">
+                          <label for="murrays">Murray's</label>
+                          <input type="checkbox" name="american-crew" id="american-crew" checked>
+                          <label for="american-crew">American Crew</label>
+                      </form>
+                  </section>
+                  <section class="goods-groups">
+                      <h2>Группы товаров:</h2>
+                      <form class="select-goods" action="/echo" method="post">
+                         <label>
+                             <input type="radio" name="select-group" value="razors">
+                             Бритвенные принадлежности
+                         </label>
+                         <label>
+                             <input type="radio" name="select-group" value="care" checked>
+                             Средства для ухода
+                         </label>
+                           <label>
+                             <input type="radio" name="select-group" value="acsessorize">
+                             Аксессуары
+                         </label>
+                         <input type="submit" value="Показать">
+                      </form>
+                  </section>
+              </div>
+              <div class="catalog-content-right">
+                  <section class="catalog-items">
+                  <article class="catalog-item">
+                      <img scr="http://placehold.it/150x100" alt="">
+                      <h3>Набор для путешествий<br>
+                      &#171;Baxter of California&#187;</h3>
+                      <!-- не понимаю, как в данном случае назвать блок с ценой -->
+                      <button class="btn">Купить</button>
+                      </article>
+                  <article class="catalog-item">
+                      <img scr="http://placehold.it/150x100" alt="">
+                      <h3>Увлажняющий кондиционер<br>
+                      &#171;Baxter of California&#187;</h3>
+                      <!-- Добавить блок с ценой -->
+                      <button class="btn">Купить</button>
+                      </article>
+                  <article class="catalog-item">
+                      <img scr="http://placehold.it/150x100" alt="">
+                      <h3>Гель для волос<br>
+                      &#171;Suavetico&#187;</h3>
+                      <!-- Добавить блок с ценой -->
+                      <button class="btn">Купить</button>
+                      </article>
+                  <article class="catalog-item">
+                      <img scr="http://placehold.it/150x100" alt="">
+                      <h3>Глина для укладки волос<br>
+                      &#171;American Crew&#187;</h3>
+                      <!-- Добавить блок с ценой -->
+                      <button class="btn">Купить</button>
+                      </article>
+                  <article class="catalog-item">
+                      <img scr="http://placehold.it/150x100" alt="">
+                      <h3>Гель для волос<br>
+                      &#171;American Crew&#187;</h3>
+                      <!-- Добавить блок с ценой -->
+                      <button class="btn">Купить</button>
+                      </article>
+                  <article class="catalog-item">
+                      <img scr="http://placehold.it/150x100" alt="">
+                      <h3>Набор для бритья<br>
+                      &#171;Baxter of California&#187;</h3>
+                      <!-- Добавить блок с ценой -->
+                      <button class="btn">Купить</button>
+                      </article>
+                      <a class="btn" href="#">1</a>
+                      <a class="btn" href="#">2</a>
+                      <a class="btn" href="#">3</a>
+                      <a class="btn" href="#">4</a>
+                  </section>
+              </div>
+          </div>
+      </main>
+      <footer class="main-footer">
+          <div class="container">
+            <section class="footer-contacts">
+            Барбершоп "Бородинский"<br>
+            Адрес:Г.Санкт-Петербург, Б.Конюшенная, д.19.8<br>   
+            <a href="#">Как нас найти?</a><br>
+            Телефон: +7 (495) 666-02-66
+            </section>
+          </div> 
+          <section class="footer-social">
+              <p>Давайте дружить!</p>
+              <a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
+              </section>
+              <section class="footer-copyright">
+              <p>Разработано:</p>
+              <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+              </section>
+      </footer>
+    </body>
+</html>
